@@ -8,10 +8,7 @@ import CommentContainer from './CommentContainer';
 const App = () => {
 	return (
 		<div className="App">
-			<CommentsListContainer>
-				<CommentContainer />
-			</CommentsListContainer>	
-				
+			<CommentsListContainer />
 		</div>
 	);
 };
