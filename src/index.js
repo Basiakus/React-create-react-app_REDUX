@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {Provider} from 'react-redux';
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import {addComment, thumbUpComment, thumbDownComment, editComment, removeComment} from './actions.js';
 import reducer from './reducer.js';
-const store = createStore(reducer);
+import { createLogger } from 'redux-logger';
+
+const logger = createLogger();
+const store = createStore(reducer, applyMiddleware(logger));
 
 ReactDOM.render(
 	<Provider store={store}>
