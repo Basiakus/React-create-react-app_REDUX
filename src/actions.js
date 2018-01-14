@@ -29,7 +29,7 @@ export function editComment(id, text) { // kreator funkcji edycji
 	};
 }
 
-export function thumbUp(votes, idComment) { //kreator funkcji +1
+export function thumbUpComment(votes, idComment) { //kreator funkcji +1
 	return {
 		type: THUMB_UP_COMMENT,
 		votes,
@@ -37,7 +37,7 @@ export function thumbUp(votes, idComment) { //kreator funkcji +1
 	};
 }
 
-export function thumbDown(votes, idComment) { //kreator funkcji -1
+export function thumbDownComment(votes, idComment) { //kreator funkcji -1
 	return {
 		type: THUMB_DOWN_COMMENT,
 		votes,

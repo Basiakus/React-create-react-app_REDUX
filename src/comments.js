@@ -7,7 +7,7 @@ import {
     addComment,
     removeComment,
     editComment,
-    thumbUp,
+    thumbUpComment,
     thumbDown
     } from './actions.js';
 
