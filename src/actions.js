@@ -29,18 +29,18 @@ export function editComment(id, text) { // kreator funkcji edycji
 	};
 }
 
-export function thumbUpComment(votes, idComment) { //kreator funkcji +1
+export function thumbUpComment(votes, CommentId) { //kreator funkcji +1
 	return {
 		type: THUMB_UP_COMMENT,
 		votes,
-		id: idComment
+		id: CommentId
 	};
 }
 
-export function thumbDownComment(votes, idComment) { //kreator funkcji -1
+export function thumbDownComment(votes, CommentId) { //kreator funkcji -1
 	return {
 		type: THUMB_DOWN_COMMENT,
 		votes,
-		id: idComment
+		id: CommentId
 	};
 }
