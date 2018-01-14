@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
-import {addComment, thumbUpComment, thumbDown, editComment, removeComment} from './actions.js';
+import {addComment, thumbUpComment, thumbDownComment, editComment, removeComment} from './actions.js';
 import reducer from './reducer.js';
 const store = createStore(reducer);
 
