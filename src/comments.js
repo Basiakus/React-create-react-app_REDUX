@@ -3,12 +3,7 @@ import {
     EDIT_COMMENT,
     THUMB_UP_COMMENT,
     THUMB_DOWN_COMMENT,
-    REMOVE_COMMENT,
-    addComment,
-    removeComment,
-    editComment,
-    thumbUpComment,
-    thumbDown
+    REMOVE_COMMENT
     } from './actions.js';
 
 function comments(state = [], action) {

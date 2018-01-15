@@ -3,12 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {Provider} from 'react-redux';
-import {createStore, combineReducers} from 'redux';
-import {addComment, thumbUpComment, thumbDownComment, editComment, removeComment} from './actions.js';
+import {createStore} from 'redux';
+import {addComment} from './actions.js';
 import reducer from './reducer.js';
 import DevTools from './DevTools';
-
-
 
 const store = createStore(
 	reducer, 
